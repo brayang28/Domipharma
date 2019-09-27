@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_1"
+    tools:context=".Buscar">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="88dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/logo_domipharma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoDomipharma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="46dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/textoDomipharma"
+        android:textColor="@color/RojoDomipharma"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/botonRetroceder"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="9dp"
+        android:background="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Buscar..."
+        app:layout_constraintEnd_toStartOf="@+id/botonVerCarrito"
+        app:layout_constraintStart_toEndOf="@+id/botonRetroceder"
+        app:layout_constraintTop_toBottomOf="@+id/textoDomipharma" />
+
+    <ImageButton
+        android:id="@+id/botonVerCarrito"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_dashboard_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoDomipharma" />
+
+    <TextView
+        android:id="@+id/textResultados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:text="Resultado(s):"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBuscar" />
+
+    <LinearLayout
+        android:id="@+id/separador"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResultados" />
+
+    <ImageView
+        android:id="@+id/imageproduct1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/colgate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separador" />
+
+    <TextView
+        android:id="@+id/textProduct1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:text="Colgate"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageproduct1" />
+
+    <TextView
+        android:id="@+id/textdp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="78dp"
+        android:text="Crema + cepillo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separador" />
+
+    <TextView
+        android:id="@+id/textvp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="96dp"
+        android:text="$9.000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textdp1" />
+
+    <LinearLayout
+        android:id="@+id/separadorInf"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textProduct1" />
+
+    <TableRow
+        android:layout_width="414dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/botonBuscar"
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:background="@color/Oscuro"
+            android:drawableTop="@drawable/mortar"
+            android:drawablePadding="1dp"
+            android:text="Buscar"
+            android:textColor="@color/Blanco" />
+
+        <Button
+            android:id="@+id/botonContacto"
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:background="@color/NoTanCaroNoTanOscuro"
+            android:drawableTop="@drawable/location"
+            android:drawablePadding="1dp"
+            android:text="Contacto"
+            android:textColor="@color/Blanco"/>
+
+        <Button
+            android:id="@+id/botonHistorial"
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:background="@color/NoTanCaroNoTanOscuro"
+            android:drawableTop="@drawable/receipt"
+            android:drawablePadding="1dp"
+            android:text="Historial"
+            android:textColor="@color/Blanco"/>
+
+        <Button
+            android:id="@+id/botonCuenta"
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:background="@color/NoTanCaroNoTanOscuro"
+            android:drawableTop="@drawable/patient"
+            android:drawablePadding="1dp"
+            android:text="Cuenta"
+            android:textColor="@color/Blanco"/>
+    </TableRow>
+</androidx.constraintlayout.widget.ConstraintLayout>

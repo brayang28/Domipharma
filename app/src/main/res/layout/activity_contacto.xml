@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_1"
+    tools:context=".Historial">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="88dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/logo_domipharma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoDomipharma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="46dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/textoDomipharma"
+        android:textColor="@color/RojoDomipharma"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/botonRetroceder"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="9dp"
+        android:background="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="414dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/botonBuscar"
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:background="@color/NoTanCaroNoTanOscuro"
+            android:drawableTop="@drawable/mortar"
+            android:drawablePadding="1dp"
+            android:text="Buscar"
+            android:textColor="@color/Blanco" />
+
+        <Button
+            android:id="@+id/botonContacto"
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:background="@color/Oscuro"
+            android:drawableTop="@drawable/location"
+            android:drawablePadding="1dp"
+            android:text="Contacto"
+            android:textColor="@color/Blanco" />
+
+        <Button
+            android:id="@+id/botonHistorial"
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:background="@color/NoTanCaroNoTanOscuro"
+            android:drawableTop="@drawable/receipt"
+            android:drawablePadding="1dp"
+            android:text="Historial"
+            android:textColor="@color/Blanco" />
+
+        <Button
+            android:id="@+id/botonCuenta"
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:background="@color/NoTanCaroNoTanOscuro"
+            android:drawableTop="@drawable/patient"
+            android:drawablePadding="1dp"
+            android:text="Cuenta"
+            android:textColor="@color/Blanco" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textTelFijo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="26dp"
+        android:text="Telefono fijo: 4654488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonRetroceder" />
+
+    <TextView
+        android:id="@+id/textDirec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="Dirección: Cr 45 Sur #7-24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTelFijo" />
+
+    <EditText
+        android:id="@+id/escribirAlgo"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Escribe algo..."
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

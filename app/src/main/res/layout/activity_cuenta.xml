@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_1"
+    tools:context=".cuenta">
+
+    <TextView
+        android:id="@+id/textTuDirec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="38dp"
+        android:text="Tu dirección:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/botonCerrarSesion"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="88dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/logo_domipharma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoDomipharma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="46dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/textoDomipharma"
+        android:textColor="@color/RojoDomipharma"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/botonRetroceder"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="9dp"
+        android:background="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="414dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/botonBuscar"
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:background="@color/NoTanCaroNoTanOscuro"
+            android:drawableTop="@drawable/mortar"
+            android:drawablePadding="1dp"
+            android:text="Buscar"
+            android:textColor="@color/Blanco" />
+
+        <Button
+            android:id="@+id/botonContacto"
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:background="@color/NoTanCaroNoTanOscuro"
+            android:drawableTop="@drawable/location"
+            android:drawablePadding="1dp"
+            android:text="Contacto"
+            android:textColor="@color/Blanco" />
+
+        <Button
+            android:id="@+id/botonHistorial"
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:background="@color/NoTanCaroNoTanOscuro"
+            android:drawableTop="@drawable/receipt"
+            android:drawablePadding="1dp"
+            android:text="Historial"
+            android:textColor="@color/Blanco" />
+
+        <Button
+            android:id="@+id/botonCuenta"
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:background="@color/Oscuro"
+            android:drawableTop="@drawable/patient"
+            android:drawablePadding="1dp"
+            android:text="Cuenta"
+            android:textColor="@color/Blanco" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textTuUbica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Tu ubicación"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonRetroceder" />
+
+    <EditText
+        android:id="@+id/editDirec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Ingresar tu dirección"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/botonCerrarSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textTuDirec" />
+
+    <Button
+        android:id="@+id/botonCerrarSesion"
+        android:layout_width="136dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/Clarito"
+        android:text="Cerrar Sesión"
+        app:layout_constraintBottom_toTopOf="@+id/tableRow2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/layout"
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTuUbica">
+
+        <fragment
+            android:id="@+id/map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="280dp"
+            android:layout_height="200dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

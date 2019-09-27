@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_1"
+    tools:context=".MainMenuClient">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="88dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/logo_domipharma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textoDomipharma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="46dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/textoDomipharma"
+        android:textColor="@color/RojoDomipharma"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textMasVendido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textMasVendido"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonProduct" />
+
+    <TextView
+        android:id="@+id/textPromo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textPromo"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/botonProduct"
+        android:layout_width="112dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/Clarito"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPromo" />
+
+    <ImageView
+        android:id="@+id/imageProduct"
+        android:layout_width="77dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/colgate"
+        app:layout_constraintStart_toStartOf="@+id/botonProduct"
+        app:layout_constraintTop_toTopOf="@+id/botonProduct" />
+
+    <Button
+        android:id="@+id/botonProduct2"
+        android:layout_width="112dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/Clarito"
+        app:layout_constraintStart_toEndOf="@+id/botonProduct"
+        app:layout_constraintTop_toBottomOf="@+id/textPromo" />
+
+    <ImageView
+        android:id="@+id/imageProduct2"
+        android:layout_width="77dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toStartOf="@+id/botonProduct2"
+        app:layout_constraintTop_toTopOf="@+id/botonProduct2"
+        tools:srcCompat="@drawable/listerine" />
+
+    <Button
+        android:id="@+id/botonProduct3"
+        android:layout_width="112dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/Clarito"
+        app:layout_constraintStart_toEndOf="@+id/botonProduct2"
+        app:layout_constraintTop_toBottomOf="@+id/textPromo" />
+
+    <ImageView
+        android:id="@+id/imageProduct3"
+        android:layout_width="77dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toStartOf="@+id/botonProduct3"
+        app:layout_constraintTop_toTopOf="@+id/botonProduct3"
+        tools:srcCompat="@drawable/acetaminofen" />
+
+    <Button
+        android:id="@+id/botonProduct4"
+        android:layout_width="112dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/Clarito"
+        app:layout_constraintStart_toEndOf="@+id/botonProduct3"
+        app:layout_constraintTop_toBottomOf="@+id/textPromo" />
+
+    <ImageView
+        android:id="@+id/imageProduct4"
+        android:layout_width="77dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toStartOf="@+id/botonProduct4"
+        app:layout_constraintTop_toTopOf="@+id/botonProduct4"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/botonProduct5"
+        android:layout_width="112dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/Clarito"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMasVendido" />
+
+    <ImageView
+        android:id="@+id/imageProduct5"
+        android:layout_width="77dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toStartOf="@+id/botonProduct5"
+        app:layout_constraintTop_toTopOf="@+id/botonProduct5"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/botonProduct6"
+        android:layout_width="112dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/Clarito"
+        app:layout_constraintStart_toEndOf="@+id/botonProduct5"
+        app:layout_constraintTop_toBottomOf="@+id/textMasVendido" />
+
+    <ImageView
+        android:id="@+id/imageProduct6"
+        android:layout_width="77dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toStartOf="@+id/botonProduct6"
+        app:layout_constraintTop_toTopOf="@+id/botonProduct6"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/botonProduct7"
+        android:layout_width="112dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/Clarito"
+        app:layout_constraintStart_toEndOf="@+id/botonProduct6"
+        app:layout_constraintTop_toBottomOf="@+id/textMasVendido" />
+
+    <ImageView
+        android:id="@+id/imageProduct7"
+        android:layout_width="77dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toStartOf="@+id/botonProduct7"
+        app:layout_constraintTop_toTopOf="@+id/botonProduct7"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/botonProduct8"
+        android:layout_width="112dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="29dp"
+        android:background="@color/Clarito"
+        app:layout_constraintStart_toEndOf="@+id/botonProduct7"
+        app:layout_constraintTop_toBottomOf="@+id/textMasVendido" />
+
+    <ImageView
+        android:id="@+id/imageProduct8"
+        android:layout_width="77dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintStart_toStartOf="@+id/botonProduct8"
+        app:layout_constraintTop_toTopOf="@+id/botonProduct8"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TableRow
+        android:layout_width="414dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/botonBuscar"
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:background="@color/NoTanCaroNoTanOscuro"
+            android:drawableTop="@drawable/mortar"
+            android:drawablePadding="1dp"
+            android:text="Buscar"
+            android:textColor="@color/Blanco" />
+
+        <Button
+            android:id="@+id/botonContacto"
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:background="@color/NoTanCaroNoTanOscuro"
+            android:drawableTop="@drawable/location"
+            android:drawablePadding="1dp"
+            android:text="Contacto"
+            android:textColor="@color/Blanco"/>
+
+        <Button
+            android:id="@+id/botonHistorial"
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:background="@color/NoTanCaroNoTanOscuro"
+            android:drawableTop="@drawable/receipt"
+            android:drawablePadding="1dp"
+            android:text="Historial"
+            android:textColor="@color/Blanco"/>
+
+        <Button
+            android:id="@+id/botonCuenta"
+            android:layout_width="97dp"
+            android:layout_height="83dp"
+            android:background="@color/NoTanCaroNoTanOscuro"
+            android:drawableTop="@drawable/patient"
+            android:drawablePadding="1dp"
+            android:text="Cuenta"
+            android:textColor="@color/Blanco"/>
+    </TableRow>
+
+    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/bottom_nav_menu" >
+
+            <Button
+                android:id="@+id/botonBuscar"
+                android:layout_width="90dp"
+                android:layout_height="90dp" />
+
+            <Button
+                android:id="@+id/botonContacto"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:layout_constraintStart_toRightOf="@id/botonBuscar" />
+
+            <Button
+                android:id="@+id/botonHistorial"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:layout_constraintStart_toRightOf="@id/botonContacto"/>
+
+            <Button
+                android:id="@+id/botonCuenta"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:layout_constraintStart_toRightOf="@id/botonHistorial"/>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <fragment
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toTopOf="@id/nav_view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navGraph="@navigation/mobile_navigation" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
