@@ -32,33 +32,33 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textCodVer"
+        android:id="@+id/textoRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="110dp"
-        android:text="@string/textCodVer"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="122dp"
+        android:text="Registrar correo"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textoDomipharma" />
 
     <EditText
-        android:id="@+id/codVer"
+        android:id="@+id/regisCorreo"
         android:layout_width="280dp"
         android:layout_height="40dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="40dp"
         android:ems="10"
-        android:hint="@string/ponerCodVer"
-        android:inputType="number"
+        android:hint="Registrar correo"
+        android:inputType="textEmailAddress"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textCodVer" />
+        app:layout_constraintTop_toBottomOf="@+id/textoRegistrar" />
 
     <TextView
         android:id="@+id/textCreeContra"
@@ -71,7 +71,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/codVer" />
+        app:layout_constraintTop_toBottomOf="@+id/regisCorreo" />
 
     <EditText
         android:id="@+id/newContra"
