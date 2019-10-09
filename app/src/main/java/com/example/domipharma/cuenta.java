@@ -8,11 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 
 public class cuenta extends AppCompatActivity {
 
     Button buscar, contacto, historial, cerrar;
     ImageButton retro;
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,8 +67,10 @@ public class cuenta extends AppCompatActivity {
         cerrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mAuth.signOut();
                 Intent cerrar = new Intent(cuenta.this, MainActivity.class);
                 startActivity(cerrar);
+                finish();
             }
         });
 
