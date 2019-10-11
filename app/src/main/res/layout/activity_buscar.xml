@@ -50,7 +50,7 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Buscar..."
+        android:hint="Buscar..."
         app:layout_constraintEnd_toStartOf="@+id/botonVerCarrito"
         app:layout_constraintStart_toEndOf="@+id/botonRetroceder"
         app:layout_constraintTop_toBottomOf="@+id/textoDomipharma" />

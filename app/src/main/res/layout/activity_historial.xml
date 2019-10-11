@@ -66,7 +66,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TableRow
-        android:layout_width="414dp"
+        android:layout_width="wrap_content"
         android:layout_height="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +74,7 @@
 
         <Button
             android:id="@+id/botonBuscar"
-            android:layout_width="97dp"
+            android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/NoTanCaroNoTanOscuro"
             android:drawableTop="@drawable/mortar"
@@ -84,33 +84,33 @@
 
         <Button
             android:id="@+id/botonContacto"
-            android:layout_width="97dp"
+            android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/NoTanCaroNoTanOscuro"
             android:drawableTop="@drawable/location"
             android:drawablePadding="1dp"
             android:text="Contacto"
-            android:textColor="@color/Blanco"/>
+            android:textColor="@color/Blanco" />
 
         <Button
             android:id="@+id/botonHistorial"
-            android:layout_width="97dp"
+            android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/Oscuro"
             android:drawableTop="@drawable/receipt"
             android:drawablePadding="1dp"
             android:text="Historial"
-            android:textColor="@color/Blanco"/>
+            android:textColor="@color/Blanco" />
 
         <Button
             android:id="@+id/botonCuenta"
-            android:layout_width="97dp"
+            android:layout_width="match_parent"
             android:layout_height="83dp"
             android:background="@color/NoTanCaroNoTanOscuro"
             android:drawableTop="@drawable/patient"
             android:drawablePadding="1dp"
             android:text="Cuenta"
-            android:textColor="@color/Blanco"/>
+            android:textColor="@color/Blanco" />
     </TableRow>
 
     <TextView
